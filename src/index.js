@@ -6,8 +6,9 @@ const cors = require('cors')
 var ObjectId = require('mongodb').ObjectID;
 
 let db = null;
+let connection_string = process.env.CONNECTION_STRING || 'mongodb://root:Pass1word@localhost:27017';
 
-MongoClient.connect('mongodb://root:Pass1word@localhost:27017', (err, client) => {
+MongoClient.connect(connection_string, (err, client) => {
     if (err) return console.error(err)
     console.log('Connected to Database')
     db = client.db('jufo')

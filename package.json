@@ -1,7 +1,11 @@
 {
   "name": "jufo-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "hub server for lieferopen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lieferopen/lieferopen-hub"
+  },
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
