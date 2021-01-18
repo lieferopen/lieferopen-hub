@@ -26,64 +26,85 @@ app.post("/locations", cors(corsOptions), (req, res) => {
 
     console.log(req.body)
 
-    const usersCollection = db.collection('locations')
-    usersCollection.insertOne(req.body)
-        .then(result => {
-            console.log(result)
-            res.send("ok");
-        })
-        .catch(error => {
-            res.send("error");
-            console.error(error)
-        })
+    if (db) {
+        const usersCollection = db.collection('locations')
+        usersCollection.insertOne(req.body)
+            .then(result => {
+                console.log(result)
+                res.send("ok");
+            })
+            .catch(error => {
+                res.send("error");
+                console.error(error)
+            })
+    } else {
+        res.send("error: db error");
+
+    }
+
 })
 
 app.patch('/locations/:details', cors(corsOptions), (req, res) => {
 
-    db.collection('locations')
-        .updateOne(
-            { "_id": ObjectId(req.params.details) },
-            {
-                $set: req.body
-            }
-        )
-        .then(results => {
-            console.log(results)
-            res.send(results)
-        })
-        .catch(error => {
-            console.error(error)
-            res.send("error");
-        })
+    if (db) {
+        db.collection('locations')
+            .updateOne(
+                { "_id": ObjectId(req.params.details) },
+                {
+                    $set: req.body
+                }
+            )
+            .then(results => {
+                console.log(results)
+                res.send(results)
+            })
+            .catch(error => {
+                console.error(error)
+                res.send("error");
+            })
+    } else {
+        res.send("error: db error");
+
+    }
 })
 
 
 app.get('/locations', cors(corsOptions), (req, res) => {
 
-    db.collection('locations').find().toArray()
-        .then(results => {
-            console.log(results)
-            res.send(results)
-        })
-        .catch(error => {
-            console.error(error)
-            res.send("error");
-        })
+    if (db) {
+        db.collection('locations').find().toArray()
+            .then(results => {
+                console.log(results)
+                res.send(results)
+            })
+            .catch(error => {
+                console.error(error)
+                res.send("error");
+            })
+    } else {
+        res.send("error: db error");
+
+    }
 })
 
 app.get('/locations/:details', cors(corsOptions), (req, res) => {
 
     // res.send(req.params);
 
-    db.collection('locations').findOne(ObjectId(req.params.details))
-        .then(results => {
-            console.log(results)
-            res.send(results)
-        })
-        .catch(error => {
-            console.error(error)
-            res.send("error");
-        })
+    if (db) {
+        db.collection('locations').findOne(ObjectId(req.params.details))
+            .then(results => {
+                console.log(results)
+                res.send(results)
+            })
+            .catch(error => {
+                console.error(error)
+                res.send("error");
+            })
+    } else {
+        res.send("error: db error");
+
+    }
 })
 
 
