@@ -1,0 +1,191 @@
+[
+    {
+        "name": "VELO",
+        "description": "Veganes Restaurant im Herzen von Heilbronn!",
+        "image": "http://velo-heilbronn.de/wp-content/uploads/2018/10/HEADER4.jpg",
+        "payment": [
+            "Bar",
+            "Gutschein",
+            "EC-Karte (keine Kreditkarte)"
+        ],
+        "times": [
+            {
+                "day": 1,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 2,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 3,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 4,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 5,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 6,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 7,
+                "date": null,
+                "closed": true,
+                "opens_at": "",
+                "closes_at": ""
+            }
+        ],
+        "address": {
+            "street": "Eichstraße",
+            "number": "14",
+            "zip_code": "74072",
+            "city": "Heilbronn",
+            "coordinates": {
+                "lat": "49.141090696542776",
+                "long": "9.218758414516602"
+            }
+        },
+
+        "delivery": {
+            "ranges": [
+                {
+                    "max_distance": 5000,
+                    "delivery_cost": 0,
+                    "min_delivery": 10.00
+                },
+                {
+                    "max_distance": 10000,
+                    "delivery_cost": 0,
+                    "min_delivery": 12.00
+                },
+                {
+                    "max_distance": 15000,
+                    "delivery_cost": 0,
+                    "min_delivery": 15.00
+                }
+            ],
+            "cities": [
+                "74072",
+                "74074",
+                "74076",
+                "74078",
+                "74080",
+                "74081",
+                "74223"
+            ]
+        }
+    },
+
+    {
+        "name": "FALAFELO",
+        "description": "Traditionelle, syrische Gerichte die wir mit unserer eigenen Note neu interpretieren. Ein perfekte Mix aus Tradition und Moderne.",
+        "image": "https://falafelo-online.de/wp-content/uploads/2020/07/falafelo-logo-big.svg",
+        "payment": [
+            "Bar",
+            "EC-Karte",
+            "Kreditkarte"
+        ],
+        "times": [
+            {
+                "day": 1,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 2,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 3,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 4,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 5,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 6,
+                "date": null,
+                "opens_at": "2021-01-01T10:20:00+01:00",
+                "closes_at": "2021-01-01T19:20:00+01:00"
+            },
+            {
+                "day": 7,
+                "date": null,
+                "closed": true,
+                "opens_at": "",
+                "closes_at": ""
+            }
+        ],
+        "address": {
+            "street": "Gerberstraße",
+            "number": "17",
+            "zip_code": "74072",
+            "city": "Heilbronn",
+            "coordinates": {
+                "lat": "49.143064188653426",
+                "long": "9.217227314727841"
+            }
+        },
+
+        "delivery": {
+            "ranges": [
+                {
+                    "max_distance": 5000,
+                    "delivery_cost": 0,
+                    "min_delivery": 10.00
+                },
+                {
+                    "max_distance": 10000,
+                    "delivery_cost": 0,
+                    "min_delivery": 12.00
+                },
+                {
+                    "max_distance": 15000,
+                    "delivery_cost": 0,
+                    "min_delivery": 15.00
+                }
+            ],
+            "cities": [
+                "74072",
+                "74074",
+                "74076",
+                "74078",
+                "74080",
+                "74081",
+                "74223"
+            ]
+        }
+    }
+]
